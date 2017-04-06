@@ -1,0 +1,46 @@
+{
+  "name": "dact-log",
+  "version": "0.0.0",
+  "description": "Logger for dact",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "standard",
+    "prepublish": "babel index.js --out-dir dist",
+    "postpublish": "rm -rf dist && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrepolischuk/dact-log.git"
+  },
+  "keywords": [
+    "dact",
+    "log",
+    "logger"
+  ],
+  "author": "Andrey Polischuk <me@andrepolischuk.com> (https://andrepolischuk.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrepolischuk/dact-log/issues"
+  },
+  "homepage": "https://github.com/andrepolischuk/dact-log#readme",
+  "dependencies": {
+    "nanologger": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "standard": "^9.0.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  }
+}
