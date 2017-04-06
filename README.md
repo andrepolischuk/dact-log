@@ -23,6 +23,9 @@ const initial = {
 const data = createData(initial, log)
 ```
 
+Use named function declarations for data extends instead of emit objects or arrow functions
+for more useful log.
+
 ## License
 
 MIT
