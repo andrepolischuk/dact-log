@@ -1,6 +1,6 @@
 {
   "name": "dact-log",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Logger for dact",
   "main": "dist/index.js",
   "module": "es/index.js",
